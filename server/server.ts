@@ -2,6 +2,7 @@
 
 import express = require("express");
 let config = require("../config");
+import path = require("path");
 let app = express();
 
 

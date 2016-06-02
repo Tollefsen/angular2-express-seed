@@ -1,17 +1,12 @@
-import {Component, ApplicationRef} from "@angular/core";
-import {Router, RouteConfig} from "@angular/router-deprecated";
+import {Component} from "@angular/core";
 
 
 @Component({
   selector: "my-app",
-  template: '',
+  template: 'lol',
   directives: [],
   providers: []
 })
-
-@RouteConfig([
-
-])
 
 
 export class App {

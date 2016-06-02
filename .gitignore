@@ -1,0 +1,12 @@
+*node_modules/
+*/typings/
+*/build/
+.DS_Store
+npm-debug.log
+.codekit-cache
+config.codekit
+
+**.js
+**.map.js
+
+!/client/systemjs.config.js
