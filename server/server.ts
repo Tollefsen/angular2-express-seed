@@ -5,7 +5,8 @@ let config = require("../config");
 import path = require("path");
 let app = express();
 
-
+app.use(express.static(__dirname + "/../../client"));
+app.use(express.static(__dirname + "/../../client/node_modules"));
 
 // Other requests to client
 app.get("/*", (req, res) => {
