@@ -1,0 +1,16 @@
+{
+  "name": "angular2-express-seed-server",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "build/server.js",
+  "scripts": {
+    "start": "nodemon ./build/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arne Christian Skarpnes, Kai Skyttä, Håvard Tollefsen",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

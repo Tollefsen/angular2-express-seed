@@ -1,0 +1,29 @@
+{
+  "name": "angular2-express-seed",
+  "version": "1.0.0",
+  "description": "advanced seed",
+  "main": "server/build/server.js",
+  "scripts": {
+    "start": "nodemon ./server/build/server.js",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "postinstall": "npm run i.typings && npm run build",
+    "i.typings": "cd server && typings i && cd ../client && typings i && cd ..",
+    "build": "npm run build.server & npm run build.client",
+    "build.server": "ntsc -p server",
+    "build.client": "ntsc -p client",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf node_modules/ server/build/ server/node_modules/ server/typings client/build/ client/node_modules/ client/typings"
+  },
+  "keywords": [],
+  "author": "Arne Christian Skarpnes, Kai Skyttä, Håvard Tollefsen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tollefsen/angular2-express-seed.git"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.0",
+    "ntypescript": "^1.201602212305.1",
+    "typings": "^0.7.11"
+  }
+}

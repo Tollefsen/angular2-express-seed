@@ -1,0 +1,35 @@
+<html>
+
+  <head>
+    <base href="/">
+    <title>Seed</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- jQuery -->
+    <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <!-- Bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+
+    <link rel="stylesheet" href="app/resources/css/style.css" media="screen" charset="utf-8">
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('build/boot').catch(function(err){ console.error(err);  });
+    </script>
+
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
+</html>

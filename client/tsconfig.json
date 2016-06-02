@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "system",
+    "sourceMap": true,
+    "watch": false,
+    "outDir": "build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "moduleResolution": "node"
+  },
+  "compileOnSave": true,
+  "filesGlob": [
+    "**/*.ts",
+    "**/*.tsx",
+    "!node_modules/**",
+    "!typings/**"
+  ],
+  "files": [
+    "app/app.ts",
+    "app/boot.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+}
