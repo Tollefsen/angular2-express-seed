@@ -20,7 +20,8 @@
   ],
   "files": [
     "app/app.ts",
-    "app/boot.ts"
+    "app/boot.ts",
+    "app/components/main.ts"
   ],
   "atom": {
     "rewriteTsconfig": true

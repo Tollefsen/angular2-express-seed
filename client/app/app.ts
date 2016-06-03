@@ -1,10 +1,11 @@
 import {Component} from "@angular/core";
+import {MainComponent} from "./components/main";
 
 
 @Component({
   selector: "my-app",
-  template: 'lol',
-  directives: [],
+  template: '<main></main>',
+  directives: [MainComponent],
   providers: []
 })
 
